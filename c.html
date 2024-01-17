@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>clickable Image</title>
+</head>
+<body>
+    <form action="/111.jpeg" autocomplete="on" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      
+         <a onclick="alert('Hello I Am Akash!')"> <input type="image" src="111.jpeg" height="50" width="50"></a><br><br>
+         <fieldset>
+            <legend>Personal</legend>
+         
+        First Name:
+       <input type="text" value="akash" disabled size="23" title="firstname"><br><br>
+       Second Name:
+       <input type="text">
+       <input type="hidden" value="sukram"><br><br>
+        Last Name:
+        <input type="text" value="ishwarkar" size="23" title="Lastname" autofocus> <br><br>
+        </fieldset><br>
+        0
+        <input type="range" id="a" name="a" value="50">
+        100+
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output><br><br>
+        Pin:
+        <input type="text" maxlength="4" size="4" title="pin" placeholder="1234"><br><br>
+        Enter a date before 2015-01-01:
+        <input type="date" max="2014-12-31"><br> <br>
+        Enter a date after 2016-01-01:
+        <input type="date" min="2016-01-02"> <br><br>
+        Quantity between(1 to 10):
+        <input type="number" max="10" min="1"> <br> <br>
+        Select files:
+        <input type="file" value="choose a file" multiple><br><br>
+        Country Code:
+        <input type="text" pattern="[A-Za-z]{3}" title="Three letter Country code"> <br> <br> 
+        Enter a phone number:
+        <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br> <br>
+        <small>format:123-45-678</small><br><br>
+        Username:
+        <input type="text" required> <br><br>
+        Password:
+        <input type="password"><br><br>
+        Email:
+        <input type="text" autocomplete="off"><br> <br>
+        Points:
+        <input type="number" step="5"><br><br>
+        <input list="cricketers" name="cricketer">
+        <datalist id="cricketers">
+            <option value="rohit"></option>
+            <option value="virat"></option>
+            <option value="hardik"></option>
+        </datalist><br> <br>
+        Choose your favourite cricketer:<br>
+        <input type="radio">
+        Rohit<br>
+        <input type="radio">
+        Virat<br>
+        <input type="radio">
+        Hardik<br> <br>
+        Choose your favourite actors:<br>
+        <input type="checkbox">
+        Salman<br>
+        <input type="checkbox">
+        Shahrukh<br>
+        <input type="checkbox">
+        Akshay<br> <br>   
+        Select your favourite colour:
+        <input type="color"><br> <br>
+        Birthday(date & time):
+        <input type="datetime-local"><br><br>   
+        Birthday (month and year):
+        <input type="month"><br><br>
+        Select a week:
+        <input type="week"> <br><br>
+        Volume(between 0 to 50):
+        <input type="range"><br><br>
+        search Google:
+        <input type="search"><br><br>
+        Select a time:
+        <input type="time"><br><br>
+        Add your homepage:
+        <input type="url"><br><br>
+        Choose a flower:
+        <select size="3" multiple>
+            <option value="rose">Rose</option>
+            <option value="lily">Lily</option>
+            <option value="champa">Champa</option>
+        </select><br><br>
+        <textarea name="message" style="width:100px; height:300px;">The cat was playing in the garden.
+        </textarea></form><br><br>
+        <input type="submit" value="submit">
+     <input type="reset" value="reset">
+    </form>
+    
+</body>
+</html>
